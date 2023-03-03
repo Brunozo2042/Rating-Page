@@ -1,3 +1,7 @@
+Esse é meu segundo projeto feito em HTML, CSS, e JS.
+
+Peguei a ideia do site Frontend Mentor.
+
 # Frontend Mentor - Interactive rating component
 
 ![Design preview for the Interactive rating component coding challenge](./design/desktop-preview.jpg)
