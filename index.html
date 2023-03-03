@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass&display=swap" rel="stylesheet">
+
+    <title>Frontend Mentor | Interactive rating component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+</head>
+
+<body>
+    <div id="frmSubmit" class="frm">
+        <!-- Rating state start -->
+        <img  id="star" src="./images/icon-star.svg" alt="">
+
+        <h2>How did we do?</h2>
+
+        <p>Please let us know how we did with your support request. All feedback is appreciated
+        to help us improve our offering!</p>
+
+
+        <div id="btns">
+            <button value="0" id="btn0" onclick="ChangeButton(this.value,'btn0')">1</button>
+            <button value="1" id="btn1" onclick="ChangeButton(this.value,'btn1')">2</button>
+            <button value="2" id="btn2" onclick="ChangeButton(this.value,'btn2')">3</button>
+            <button value="3" id="btn3" onclick="ChangeButton(this.value,'btn3')">4</button>
+            <button value="4" id="btn4" onclick="ChangeButton(this.value,'btn4')">5</button>
+        </div>
+
+        <!-- <ul class="rating">
+            <li class="answer1">
+                <input type="radio" name="ans" id="btn1">
+                <label for="btn1">1</label>
+            </li>
+            <li class="answer2">
+                <input type="radio" name="ans" id="btn2">
+                <label for="btn2">2</label>
+            </li>
+            <li class="answer3">
+                <input type="radio" name="ans" id="btn3">
+                <label for="btn3">3</label>
+            </li>
+            <li class="answer4">
+                <input type="radio" name="ans" id="btn4">
+                <label for="btn4">4</label>
+            </li>
+            <li class="answer5">
+                <input type="radio" name="ans" id="btn5">
+                <label for="btn5">5</label>
+            </li>
+        </ul> -->
+        <br>
+
+        <div id="btnSub">
+            <button type="submit" onclick="Submit()">Submit</button>
+        </div>
+
+        <!-- Rating state end -->
+    </div>
+    <!-- Thank you state start -->
+	<div id="frmThankYou" class="frm">
+
+        <img src="./images/illustration-thank-you.svg" alt="">
+
+        <div id="finalRat">
+		    You selected <span id="1to5"></span> out of 5
+        </div>
+
+		<h2>Thank you!</h2>
+
+		<p>We appreciate you taking the time to give a rating. If you ever need more support,
+		don’t hesitate to get in touch!</p>
+
+        <button onclick="Back()" id="back">Back</button>
+		<!-- Thank you state end -->
+	</div>
+
+    <div class="attribution">
+        <br>
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="https://www.linkedin.com/in/bruno-henrique-a88961208/">Bruno Henrique</a>.
+    </div>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
